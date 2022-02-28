@@ -1,0 +1,88 @@
+     python
+
+
+e="dfdfdfdfd"
+e[::]
+运行结果为dfdfdfdf
+
+链表可以加，乘和减只能用数字
+['aaa']*2
+['bbb']-1
+
+append()追加
+len（a）长度
+ord()ASCII码转换
+count()出现次数
+extend()追加链表可循环
+index索引位置
+remove()移除匹配的第一个值
+pop()移除列表元素并显示
+insert（2，444）将444插入2位置
+sort()排序从小到大
+reverse()倒序
+append()与extend()的区别
+
+
+
+元组tuple
+(1,2,3,4,5)
+(1,2,3,'aa')
+
+切片
+
+数组
+函数
+
+
+python的包
+package
+创建一个
+文件夹
+包下面有一些模块
+模块下可以写类，函数，代码
+保证高效工作，取消繁琐操作
+利用不同的包区分命名空间
+包下可以继续创建子包
+包与普通文件夹的区别是包下有——_init_.py文件夹
+import可以导入包也可以导入模块，不能直接导入模块中变量
+
+导入方法：第一种：    import  顶级包名.模块名
+便捷方法：import  包名.模块名 as 名字
+由于包名太长，取一个简单的名字
+第二种：from 顶级包名.模块名  import  变量
+当变量太多事，用*号可以输出所有包里的变量，但是*指向不明确，
+from 顶级包名.模块名  import  *
+用__all__=['a','b']限制*，输出你需要的变量，只能限制__alll__
+当变量太多时用换行
+from chapter07.iport7_7 import a,b,\
+  c,d
+from chapter07.iport7_7 import (a,b,
+  c,d)
+__init__的作用：可以将一些具体常用的模块写入，包下的其他模块会添加这个模块进行批量当导入
+
+变成一个中间体
+路径输出：print（chapter07.sys.path)
+避免循环导入      参考ex包下代码
+防止死锁，死循环
+
+只要导入就会执行包内所有代码
+print(dir())
+包下所有
+
+if __name__=="_main_":
+    print("aaaa")
+else:
+   print("sss")
+
+..可以跨越上级路径
+.表示同级目录
+..表示上级目录
+from .package2.m2 import a
+
+
+
+
+
+
+
+
